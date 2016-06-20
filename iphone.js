@@ -14,10 +14,10 @@ if (window.innerWidth && window.innerWidth <=480) {
 $document.read(function(){loadpage();});
 
 function loadPage(url) {
+  $('body').append('<div id="progress">Loading...</div>')
   if (url=undefined) {
     $('#container').load('index.html #header ul', hijackLinks);
-  }
-  else{
+  } else{
     $('#contaiiner').load(url + ' #content', hijackLinks);
   }
 }
@@ -27,4 +27,5 @@ function hijackLinks() {
     e.preventDefault();
     loadPage(e.target.href);
   });
+  $('#progress').remove();
 }

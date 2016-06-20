@@ -10,6 +10,10 @@ body {
 #header h1{
   margin: 0;
   padding: 0;
+  max-width: 160px;
+  overflow: hidden;
+  white-space:nowrap;
+  text-ooverflow:ellipsis;
 }
 
 #header h1 a {

@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 #header {
     background-color: #ccc;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#33FF00), to(#333300));

@@ -14,31 +14,33 @@ body{
   width:inherit;
   padding:0;
   margin:0;
+  text-align: center;
 }
 
 #header{
   background-color: #ccc;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#33FF00), to(#333300));
+  background: -webkit-linear-gradient(right top, #33FF00, #333300); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right top, #33FF00, #333300); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right top, #33FF00, #333300); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(right top, #33FF00, #333300); /* Standard syntax */
+  border: #666 solid 0 0 1px 0;
 }
 
 #header h1{
   color: #FFFF00;
-  font-size: 72px;
+  font-size:8em;
   font-weight: bold;
   margin-left:auto;
   margin-right:auto;
   padding: 10px 0 0 0;
   text-align: center;
   text-shadow: 0px 1px 0px #fff;
-  max-width: 160px;
-  overflow: hidden;
+  max-width: 850px;
   white-space: nowrap;
 }
 
 ul {
     list-style: none;
-    margin: 10px;
-    padding: 0;
 }
 
 ul li a {
@@ -82,7 +84,7 @@ ul li a:active,ul li a:hover {
     width: 200px;
 }
 
-/*#header div.leftButton {
+#header div.leftButton {
     font-weight: bold;
     text-align: center;
     line-height: 28px;
@@ -101,4 +103,4 @@ ul li a:active,ul li a:hover {
 }
 #header div.leftButton.clicked {
     -webkit-border-image: url(images/back_button_clicked.png) 0 8 0 14;
-}*/
+}

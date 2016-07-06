@@ -23,6 +23,7 @@ body{
   background: -o-linear-gradient(right top, #33FF00, #333300); /* For Opera  */
   background: -moz-linear-gradient(right top, #33FF00, #333300); /* For Firefox */
   background: linear-gradient(to right top, #33FF00, #333300); /* Standard syntax */
+  clear:both;
 }
 
 #header h1{
@@ -35,11 +36,10 @@ body{
   text-align: center;
   text-shadow: 0px 1px 0px #fff;
   width:100%;
-  clear:both;
   white-space: nowrap;
 }
 
-#header div.leftButton {
+/*#header div.leftButton {
     font-weight: bold;
     text-align: center;
     line-height: 28px;
@@ -59,7 +59,7 @@ body{
 
 #header div.leftButton.clicked {
     -webkit-border-image: url(images/back_button_clicked.png) 0 8 0 14;
-}
+}*/
 
 #games {
   padding: 5px 0 5px 0;
@@ -86,7 +86,6 @@ ul li a:active,ul li a:hover {
 }
 
 #content {
-    padding: 10px;
     text-shadow: 0px 1px 0px #fff;
 }
 

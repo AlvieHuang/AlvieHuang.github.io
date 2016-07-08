@@ -1,42 +1,40 @@
 body{
-  background-color: #66FF00;
+  background-color: #ddd;
   font-family: Helvetica, sans-serif;
   font-size: 14px;
-  width:inherit;
-  padding:0;
-  margin:0 0 0 ;
+  max-width:1000px;
+  margin:auto;
   text-align: center;
 }
 
 #top_bar{
-  background-color: #ccc;
+  background: #ccc;
   background: -webkit-linear-gradient(#00AA00, #004400); /* For Safari */
   background: -o-linear-gradient(#00AA00, #004400); /* For Opera  */
   background: -moz-linear-gradient(#00AA00, #004400); /* For Firefox */
-  background: linear-gradient(#00AA00, #004400); /* Standard syntax */
-  float:right;
+  background: linear-gradient(to bottom, #00AA00, #004400); /* Standard syntax */
+  max-width:1000px;
+  margin:auto;
+  padding-right:100px;
+  height:200px;
+  margin-bottom:10px;
 }
 
-#header{
-  background-color: #ccc;
-  background: -webkit-linear-gradient(right top, #33FF00, #333300); /* For Safari */
-  background: -o-linear-gradient(right top, #33FF00, #333300); /* For Opera  */
-  background: -moz-linear-gradient(right top, #33FF00, #333300); /* For Firefox */
-  background: linear-gradient(to right top, #33FF00, #333300); /* Standard syntax */
-  clear:both;
-}
-
-#header h1{
+#top_bar h1{
   color: #33FF00;
-  font-size:8em;
+  font-size:2em;
   font-weight: bold;
-  margin-left:auto;
-  margin-right:auto;
-  padding: 10px 0 0 0;
-  text-align: center;
-  text-shadow: 0px 1px 0px #fff;
-  width:100%;
+  text-align: left;
+  float:left;
+  padding-left:40px;
   white-space: nowrap;
+}
+#top_bar ul li a {
+  float:right;
+  margin-top:50px;
+}
+#top_bar ul li:first-child a {
+  padding-right:20px
 }
 
 /*#header div.leftButton {
@@ -62,15 +60,52 @@ body{
 }*/
 
 #games {
-  padding: 5px 0 5px 0;
+  background-color: #3F0;
+  background: -webkit-linear-gradient(right top, #33FF00, #333300); /* For Safari */
+  background: -o-linear-gradient(right top, #33FF00, #333300); /* For Opera  */
+  background: -moz-linear-gradient(right top, #33FF00, #333300); /* For Firefox */
+  background: linear-gradient(to right top, #33FF00, #333300); /* Standard syntax */
+  clear:both;
+  padding-bottom:20px;
+  height:auto;
+  overflow:auto;
 }
+
+#games h2{
+  padding:15px;
+  font-size:40px;
+  clear:both;
+}
+
+#games h3{
+  padding:15px;
+  font-size:24px;
+  clear:both;
+}
+
+.left{
+  width:45%;
+  height:200px;
+  float:left;
+  clear:left;
+  border: solid 2px black;
+  margin-left:3.5%;
+}
+
+.right{
+  width:45%;
+  height:200px;
+  float:right;
+  border:solid 2px black;
+  margin-right:3.5%;
+}
+
 
 ul {
     list-style: none;
 }
 
 ul li a {
-    border: 1px solid #999999;
     color: #222222;
     display: block;
     font-size: 24px;
@@ -78,15 +113,16 @@ ul li a {
     text-decoration: none;
     color:white;
     float:left;
-    padding: 0 2px 0 2px;
+    padding: 0 5px 0 5px;
 }
 
 ul li a:active,ul li a:hover {
-    background-color: #003311;
+    text-decoration: underline;
 }
 
 #content {
     text-shadow: 0px 1px 0px #fff;
+    clear:both;
 }
 
 #progress {
@@ -117,6 +153,7 @@ ul li a:active,ul li a:hover {
 
 #subtle {
   text-align: right;
+  float:right;
   color:#338800;
   font-size:20px;
   font-weight:bold;

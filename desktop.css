@@ -14,10 +14,9 @@ body{
   background: -moz-linear-gradient(#00AA00, #004400); /* For Firefox */
   background: linear-gradient(to bottom, #00AA00, #004400); /* Standard syntax */
   max-width:1000px;
-  margin:auto;
+  margin: 15px auto 10px auto;
   padding-right:100px;
   height:200px;
-  margin-bottom:10px;
 }
 
 #top_bar h1{
@@ -71,13 +70,13 @@ body{
   overflow:auto;
 }
 
-#games h2{
+h2{
   padding:15px;
   font-size:40px;
   clear:both;
 }
 
-#games h3{
+h3{
   padding:15px;
   font-size:24px;
   clear:both;
@@ -100,18 +99,31 @@ body{
   margin-right:3.5%;
 }
 
-#games a{
-  font-size: 20px;
+.picleft {
+  width:45%;
+  height:auto;
+  float:left;
+  clear:left;
+  border: solid 2px black;
+  margin-left:3.5%;
+
+}
+
+#games div a{
+  font-size: 14px;
   font-weight: bold;
   text-decoration: none;
   color:white;
-  padding:10px;
+  padding:8px;
   background-color:blue;
   border-radius:5px;
+  float:right;
+  margin:10px 20px 10px 0;
 }
 
-#games a:hovor, #games a:active{
-    text-decoration: underline;
+#games div a:hovor, #games a:active{
+    background-color:purple;
+    font-size:14px;
 }
 
 ul {
@@ -155,12 +167,13 @@ ul li a:active,ul li a:hover {
 }
 
 #footer {
-  position: absolute;
+  position: relative;
   right: 0;
   bottom: 0;
   left: 0;
   padding: 1rem;
   background-color: #003300;
+  margin-top:20px;
 }
 
 #subtle {
@@ -169,4 +182,9 @@ ul li a:active,ul li a:hover {
   color:#338800;
   font-size:20px;
   font-weight:bold;
+}
+
+img{
+  max-width:100%;
+  hieght:auto;
 }

@@ -9,7 +9,8 @@
         <link rel="stylesheet" type="text/css" href="explorer.css" media="all" />
         <![endif]-->
         <script type="text/javascript" src="jquery.js"></script>
-        <script type="text/javascript" src="iphone.js"></script>
+        <script type="text/javascript" src="iphone.js" media="only screen and (max-width: 480px)"></script>
+        <script type="text/javascript" src="desktop.js" media="screen and (min-width: 481px)"></script>
     </head>
     <body>
         <div id="main_container">
@@ -22,10 +23,12 @@
             </div>
             <div id="games">
                 <h2>Games</h2>
-                <div class="left">
+                <div class="left" id="WvA">
                     <h3>Witches Vs. Aliens</h3>
-                    <a href="https://github.com/Reddeyfish/Witches-vs-Aliens-2015-2016">View Github</a>
-                    <a href="WvA.html">See more</a>
+                    <div class="link" id="WvAsub">
+                        <a href="https://github.com/Reddeyfish/Witches-vs-Aliens-2015-2016">View Github</a>
+                        <a href="WvA.html">See more</a>
+                    </div>
                 </div>
                 <div class="right">
                     <h3>Asteroids 9000</h3>
@@ -33,8 +36,11 @@
                 </div>
             </div>
             <div id="content">
-                <h2>About</h2>
-                <p>Alvin Huang is a student at UCI. ...</p>
+
+              <button id="hide">Hide</button>
+              <button id="show">Show</button>
+              <p id="test">This is a text</p>
+
             </div>
             <!-- <div id="sidebar">
                 <p>Alvin Huang is a programmer.</p>

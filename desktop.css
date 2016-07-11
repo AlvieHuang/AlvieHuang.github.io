@@ -60,12 +60,12 @@ body{
 
 #games {
   background-color: #3F0;
-  background: -webkit-linear-gradient(right top, #33FF00, #333300); /* For Safari */
-  background: -o-linear-gradient(right top, #33FF00, #333300); /* For Opera  */
-  background: -moz-linear-gradient(right top, #33FF00, #333300); /* For Firefox */
-  background: linear-gradient(to right top, #33FF00, #333300); /* Standard syntax */
+  background: -webkit-linear-gradient(right top, #33FF00, #00FFAA); /* For Safari */
+  background: -o-linear-gradient(right top, #33FF00, #00FFAA); /* For Opera  */
+  background: -moz-linear-gradient(right top, #33FF00, #00FFAA); /* For Firefox */
+  background: linear-gradient(to right top, #33FF00, #00FFAA); /* Standard syntax */
   clear:both;
-  padding-bottom:20px;
+  padding-bottom:30px;
   height:auto;
   overflow:auto;
 }
@@ -121,10 +121,14 @@ h3{
   margin:10px 20px 10px 0;
 }
 
-#games div a:hovor, #games a:active{
+.link a:hovor{
+  background-color:black;
+}
+
+/*#games div a:hovor, #games a:active{
     background-color:purple;
     font-size:14px;
-}
+}*/
 
 ul {
     list-style: none;
@@ -182,9 +186,4 @@ ul li a:active,ul li a:hover {
   color:#338800;
   font-size:20px;
   font-weight:bold;
-}
-
-img{
-  max-width:100%;
-  hieght:auto;
 }

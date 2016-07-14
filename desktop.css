@@ -28,35 +28,35 @@ body{
   padding-left:40px;
   white-space: nowrap;
 }
-#top_bar ul li a {
-  float:right;
-  margin-top:50px;
+#top_bar p{
+  float:left;
+  clear:left;
+  color: #33FF00;
+  font-size:1em;
+  font-weight: bold;
+  text-align: left;
+  padding-left:40px;
+  width:auto;
 }
-#top_bar ul li:first-child a {
+.page{
+  float:right;
+}
+.page a {
+  color: #222222;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color:white;
+  padding: 0 5px 0 5px;
+  float:right;
+  white-space:nowrap;
+}
+.page:first-child a {
   padding-right:20px
 }
-
-/*#header div.leftButton {
-    font-weight: bold;
-    text-align: center;
-    line-height: 28px;
-    color: white;
-    text-shadow: rgba(0,0,0,0.6) 0px -1px 0px;
-    position: absolute;
-    top: 7px;
-    left: 6px;
-    max-width: 50px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    border-width: 0 8px 0 14px;
-    -webkit-border-image: url(images/back_button.png) 0 8 0 14;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+.page a:hover{
+  text-decoration: underline;
 }
-
-#header div.leftButton.clicked {
-    -webkit-border-image: url(images/back_button_clicked.png) 0 8 0 14;
-}*/
 
 #games {
   background-color: #3F0;
@@ -70,13 +70,13 @@ body{
   overflow:auto;
 }
 
-h2{
+#games h2{
   padding:15px;
   font-size:40px;
   clear:both;
 }
 
-h3{
+#games h3{
   padding:15px;
   font-size:24px;
   clear:both;
@@ -99,6 +99,31 @@ h3{
   margin-right:3.5%;
 }
 
+#games div div{
+  margin:10px 0;
+  width:100%;
+  overflow:auto;
+  height:auto;
+  background-color:#222;
+  padding:10px 0 10px 0;
+  display:none;
+}
+
+#games div a{
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius:5px;
+  color:white;
+  padding:8px;
+  float:right;
+  margin-right:20px
+}
+#games div a:hover, #games a:active{
+  color:#222;
+  background-color:#00FF66;
+}
+
 .picleft {
   width:45%;
   height:auto;
@@ -109,44 +134,8 @@ h3{
 
 }
 
-#games div a{
-  font-size: 14px;
-  font-weight: bold;
-  text-decoration: none;
-  color:white;
-  padding:8px;
-  background-color:blue;
-  border-radius:5px;
-  float:right;
-  margin:10px 20px 10px 0;
-}
-
-.link a:hovor{
-  background-color:black;
-}
-
-/*#games div a:hovor, #games a:active{
-    background-color:purple;
-    font-size:14px;
-}*/
-
-ul {
-    list-style: none;
-}
-
-ul li a {
-  color: #222222;
-  display: block;
-  font-size: 24px;
-  font-weight: bold;
-  text-decoration: none;
-  color:white;
-  float:left;
-  padding: 0 5px 0 5px;
-}
-
-ul li a:active,ul li a:hover {
-    text-decoration: underline;
+.isHidden{
+  visibility: hidden;
 }
 
 #content {
@@ -178,6 +167,7 @@ ul li a:active,ul li a:hover {
   padding: 1rem;
   background-color: #003300;
   margin-top:20px;
+  visibility: hidden;
 }
 
 #subtle {

@@ -1,5 +1,5 @@
 body{
-  background-color: #ddd;
+  background-color: #eee;
   font-family: Helvetica, sans-serif;
   max-width:1000px;
   margin:auto;
@@ -43,7 +43,6 @@ body{
   clear:none;
 }
 .page a {
-  color: #222222;
   font-size: 24px;
   font-weight: bold;
   text-decoration: none;

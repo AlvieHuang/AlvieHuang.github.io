@@ -17,9 +17,9 @@ $(document).ready(function(){
 $(document).ready(function(){
     $( "#games #WvA" ).hover(
       function() {
-        $(this).children("div").slideToggle("fast");
+        $(this).children("div").stop().slideToggle("fast");
       }, function() {
-        $(this).children("div").slideToggle("fast");
+        $(this).children("div").stop().slideToggle("fast");
       }
     );
 });
@@ -28,9 +28,9 @@ $(document).ready(function(){
 $(document).ready(function(){
     $( "#games #Asteroid" ).hover(
       function() {
-        $(this).children("div").fadeIn("fast");
+        $(this).children("div").stop().fadeIn("fast");
       }, function() {
-        $(this).children("div").fadeOut("fast");
+        $(this).children("div").stop().fadeOut("fast");
       }
     );
 });

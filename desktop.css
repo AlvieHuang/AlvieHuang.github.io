@@ -130,13 +130,53 @@ h2{
   background-color:#00FF66;
 }
 
-.picleft {
+.section{
+  clear:both;
+  margin:10px 0 10px 0;
+  padding:10px 0 10px 0;
+  overflow:auto;
+}
+
+.section .left{
   width:45%;
   height:auto;
   float:left;
   clear:left;
   border: solid 2px black;
   margin-left:3.5%;
+}
+
+.section .left img{
+  width:100%;
+  height:auto;
+}
+
+.section .right{
+  width:45%;
+  height:auto;
+  float:right;
+  clear:right;
+  border: solid 2px black;
+  margin-right:3.5%;
+}
+
+.section .right img{
+  width:100%;
+  height:auto;
+}
+
+.purple{
+  background: -webkit-linear-gradient(right top, #9900FF, #CC00FF); /* For Safari */
+  background: -o-linear-gradient(right top, #9900FF, #CC00FF); /* For Opera  */
+  background: -moz-linear-gradient(right top, #9900FF, #CC00FF); /* For Firefox */
+  background: linear-gradient(to right top, #9900FF, #FF00DD); /* Standard syntax */
+}
+
+.green{
+  background: -webkit-linear-gradient(right top, #33FF00, #00FFAA); /* For Safari */
+  background: -o-linear-gradient(right top, #33FF00, #00FFAA); /* For Opera  */
+  background: -moz-linear-gradient(right top, #33FF00, #00FFAA); /* For Firefox */
+  background: linear-gradient(to right top, #33FF00, #00FFAA); /* Standard syntax */
 }
 
 #content {

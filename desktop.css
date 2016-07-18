@@ -1,5 +1,8 @@
 body{
   background-color: #eee;
+}
+
+#main_container{
   font-family: Helvetica, sans-serif;
   max-width:1000px;
   margin:auto;
@@ -50,9 +53,6 @@ body{
   padding: 0 5px 0 5px;
   float:right;
   white-space:nowrap;
-}
-.page:first-child a {
-  padding-right:20px
 }
 .page a:hover{
   text-decoration: underline;

@@ -11,10 +11,10 @@ body{
 
 #top_bar{
   background: #005500;
-  background: -webkit-linear-gradient(#00AA00, #004400); /* For Safari */
-  background: -o-linear-gradient(#00AA00, #004400); /* For Opera  */
-  background: -moz-linear-gradient(#00AA00, #004400); /* For Firefox */
-  background: linear-gradient(to bottom, #00AA00, #004400); /* Standard syntax */
+  background: -webkit-linear-gradient(#00BB00, #003300); /* For Safari */
+  background: -o-linear-gradient(#00BB00, #003300); /* For Opera  */
+  background: -moz-linear-gradient(#00BB00, #003300); /* For Firefox */
+  background: linear-gradient(to bottom, #00BB00, #003300); /* Standard syntax */
   margin: 15px auto 10px auto;
   padding-right:100px;
   height:200px;
@@ -58,85 +58,12 @@ body{
   text-decoration: underline;
 }
 
-#games {
-  background-color: #3F0;
-  background: -webkit-linear-gradient(right top, #33FF00, #00FFAA); /* For Safari */
-  background: -o-linear-gradient(right top, #33FF00, #00FFAA); /* For Opera  */
-  background: -moz-linear-gradient(right top, #33FF00, #00FFAA); /* For Firefox */
-  background: linear-gradient(to right top, #33FF00, #00FFAA); /* Standard syntax */
-  clear:both;
-  padding-bottom:30px;
-  height:auto;
-  overflow:auto;
-}
-
-h2{
-  padding:15px;
-  font-size:40px;
-  clear:both;
-}
-.GameTitle{
-  padding-top:15px;
-  font-size:24px;
-  clear:both;
-  font-weight:bold;
-  margin:10px 0;
-}
-.GameRole{
-  padding-bottom:15px;
-  font-size:18px;
-  clear:both;
-  font-weight:bold;
-  margin:0;
-}
-
-.left{
-  width:45%;
-  height:200px;
-  float:left;
-  clear:left;
-  border: solid 2px #222;
-  margin-left:3.5%;
-}
-
-.right{
-  width:45%;
-  height:200px;
-  float:right;
-  border:solid 2px #222;
-  margin-right:3.5%;
-}
-
-#games div div{
-  width:100%;
-  overflow:auto;
-  background-color:#222;
-  padding:11px 0 11px 0;
-  display:none;
-}
-
-#games a{
-  font-size: 14px;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius:5px;
-  color:white;
-  padding:7px;
-  float:right;
-  margin-right:20px
-}
-#games a:hover, #games a:active{
-  color:#222;
-  background-color:#00FF66;
-}
-
 .section{
   clear:both;
   margin:10px 0 10px 0;
-  padding:10px 0 10px 0;
+  padding:30px 0 30px 0;
   overflow:auto;
 }
-
 .section .left{
   width:45%;
   height:auto;
@@ -145,12 +72,6 @@ h2{
   border: solid 2px black;
   margin-left:3.5%;
 }
-
-.section .left img{
-  width:100%;
-  height:auto;
-}
-
 .section .right{
   width:45%;
   height:auto;
@@ -160,23 +81,90 @@ h2{
   margin-right:3.5%;
 }
 
-.section .right img{
+.green{
+  background-color:#3F0
+  background: -webkit-linear-gradient(right top, #3F0, #0FA); /* For Safari */
+  background: -o-linear-gradient(right top, #3F0, #0FA); /* For Opera  */
+  background: -moz-linear-gradient(right top, #3F0, #0FA); /* For Firefox */
+  background: linear-gradient(to right top, #3F0, #0FA); /* Standard syntax */
+}
+.purple{
+  background: -webkit-linear-gradient(right top, #90F, #F0D); /* For Safari */
+  background: -o-linear-gradient(right top, #90F, #F0D); /* For Opera  */
+  background: -moz-linear-gradient(right top, #90F, #F0D); /* For Firefox */
+  background: linear-gradient(to right top, #90F, #F0D); /* Standard syntax */
+}
+
+h2{
+  font-size:40px;
+  clear:both;
+  padding:0;
+  margin:0 0 40px;
+}
+h3{
+  font-size:40px;
+  clear:both;
+  padding:10px 0 15px;
+  margin:15px 0 10px;
+}
+h4{
+  font-size:28px;
+  font-weight: bold;
+  margin:20px 0 20px;
+}
+.fullimg{
   width:100%;
   height:auto;
 }
-
-.purple{
-  background: -webkit-linear-gradient(right top, #9900FF, #CC00FF); /* For Safari */
-  background: -o-linear-gradient(right top, #9900FF, #CC00FF); /* For Opera  */
-  background: -moz-linear-gradient(right top, #9900FF, #CC00FF); /* For Firefox */
-  background: linear-gradient(to right top, #9900FF, #FF00DD); /* Standard syntax */
+.leftimg{
+  height:auto;
+  position: relative;
+  float:left;
+  margin:10px 0 0 10px;
+}
+.rightimg{
+  width:50px;
+  height:auto;
+  position: relative;
+  float:right;
+  margin:10px 10px 0;
+}
+.section div p{
+  padding-bottom:15px;
+  font-size:18px;
+  clear:both;
+  margin:0;
 }
 
-.green{
-  background: -webkit-linear-gradient(right top, #33FF00, #00FFAA); /* For Safari */
-  background: -o-linear-gradient(right top, #33FF00, #00FFAA); /* For Opera  */
-  background: -moz-linear-gradient(right top, #33FF00, #00FFAA); /* For Firefox */
-  background: linear-gradient(to right top, #33FF00, #00FFAA); /* Standard syntax */
+#games .left{
+  height:200px;
+}
+
+#games .right{
+  height:200px;
+}
+
+.section div div{
+  width:100%;
+  overflow:auto;
+  background-color:#222;
+  padding:11px 0 11px 0;
+  display:none;
+}
+
+.section a{
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius:5px;
+  color:white;
+  padding:7px;
+  float:right;
+  margin-right:20px
+}
+.section a:hover, .section a:active{
+  color:#222;
+  background-color:#00FF66;
 }
 
 #content {

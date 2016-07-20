@@ -1,8 +1,45 @@
-
+var stop = false;
 
 //
 //
+var animateDown = function(targetElement, speed){
+    if (stop){return;}
+    $(targetElement).animate(
+        {
+            top:'+=100px'
+        },
+        {
+        duration: speed,
+        complete: function(){
+            animateUp(this, speed);
+            }
+        }
+    );
+};
 
+var animateUp = function(targetElement, speed){
+    $(targetElement).animate(
+        {
+            top:'-=100px'
+        },
+        {
+        duration: speed,
+        complete: function(){
+            animateDown(this, speed);
+            }
+        }
+    );
+};
+
+var stopAnimation = function(){
+  stop=true;
+  $(".leftimg").stop("true,false")
+}
+
+$(document).ready(function(){
+    animateDown($(".leftimg"),"slow");
+    animateDown($(".rightimg"),"slow");
+});
 
 $(document).ready(function(){
     $( "#content p" ).hover(

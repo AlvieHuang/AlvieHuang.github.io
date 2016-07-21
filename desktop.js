@@ -1,4 +1,5 @@
 var stop = false;
+var animation = true;
 
 //
 //
@@ -6,7 +7,7 @@ var animateDown = function(targetElement, speed){
     if (stop){return;}
     $(targetElement).animate(
         {
-            top:'+=100px'
+            top:'100px'
         },
         {
         duration: speed,
@@ -20,7 +21,7 @@ var animateDown = function(targetElement, speed){
 var animateUp = function(targetElement, speed){
     $(targetElement).animate(
         {
-            top:'-=100px'
+            top:'10px'
         },
         {
         duration: speed,
@@ -31,15 +32,16 @@ var animateUp = function(targetElement, speed){
     );
 };
 
-var stopAnimation = function(){
-  stop=true;
-  $(".leftimg").stop("true,false")
-}
-
-$(document).ready(function(){
-    animateDown($(".leftimg"),"slow");
-    animateDown($(".rightimg"),"slow");
-});
+var animations = function(){
+  if (animation){
+    animation=false;
+    $("#animations span").text="unlock all animations";
+  }
+  else {
+    animation=true;
+    $("#animations span").text="lock all animations";
+  }
+};
 
 $(document).ready(function(){
     $( "#content p" ).hover(
@@ -55,8 +57,21 @@ $(document).ready(function(){
     $( "#games #WvA" ).hover(
       function() {
         $(this).children("div").stop().slideToggle("fast");
-      }, function() {
+        if (animation){
+          stop=false;
+          $("#ball").fadeIn("fast");
+          animateDown($("#WvA .leftimg"),"slow");
+          animateDown($("#WvA .rightimg"),"slow");
+        }
+      },
+      function() {
         $(this).children("div").stop().slideToggle("fast");
+        if (animation){
+          stop=true;
+          $("#WvA .leftimg").finish();
+          $("#WvA .rightimg").finish();
+          $("#ball").stop().fadeOut("fast");
+        }
       }
     );
 });

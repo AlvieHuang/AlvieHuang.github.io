@@ -63,6 +63,7 @@ body{
   margin:10px 0 10px 0;
   padding:30px 0 30px 0;
   overflow:auto;
+  position: relative;
 }
 .section .left{
   width:45%;
@@ -97,6 +98,25 @@ body{
   background: linear-gradient(to right top, #90F, #F0D); /* Standard syntax */
 }
 
+#animations{
+  position: absolute;
+  top:20px;
+  right:20px;
+  border: none;
+  background-color: #040;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  padding:7px
+}
+#animations:hover{
+    box-shadow: 0 8px 30px 5px rgba(0,0,0,0.24);
+}
 h2{
   font-size:40px;
   clear:both;
@@ -136,6 +156,15 @@ h4{
   clear:both;
   margin:0;
 }
+#ball{
+  height:auto;
+  position:absolute;
+  top:30%;
+  left:-webkit-calc(50% - 25px);
+  left:-moz-calc(50% - 25px);
+  left:calc(50% - 25px);
+  display:none;
+}
 
 #games .left{
   height:200px;
@@ -151,6 +180,8 @@ h4{
   background-color:#222;
   padding:11px 0 11px 0;
   display:none;
+  position:absolute;
+  bottom:0;
 }
 
 .section a{

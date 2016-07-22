@@ -9,6 +9,9 @@ body{
   text-align: center;
 }
 
+/************************************************************************
+                                top bar
+************************************************************************/
 #top_bar{
   background: #005500;
   background: -webkit-linear-gradient(#00BB00, #003300); /* For Safari */
@@ -58,6 +61,9 @@ body{
   text-decoration: underline;
 }
 
+/************************************************************************
+                                section
+************************************************************************/
 .section{
   clear:both;
   margin:10px 0 10px 0;
@@ -105,9 +111,6 @@ body{
   border: none;
   background-color: #040;
   color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
   font-size: 16px;
   cursor: pointer;
   -webkit-transition-duration: 0.4s; /* Safari */
@@ -116,6 +119,9 @@ body{
 }
 #animations:hover{
     box-shadow: 0 8px 30px 5px rgba(0,0,0,0.24);
+}
+#animations:active{
+    box-shadow: 0 4px 15px 5px #9f3;
 }
 h2{
   font-size:40px;
@@ -141,13 +147,13 @@ h4{
 .leftimg{
   height:auto;
   position: absolute;
-  left:10px;
+  left:3%;
   top:10px;
 }
 .rightimg{
   height:auto;
   position: absolute;
-  right:10px;
+  right:3%;
   top:10px;
 }
 .section div p{
@@ -159,10 +165,8 @@ h4{
 #ball{
   height:auto;
   position:absolute;
-  top:30%;
-  left:-webkit-calc(50% - 25px);
-  left:-moz-calc(50% - 25px);
-  left:calc(50% - 25px);
+  top:35%;
+  left:60%;
   display:none;
 }
 

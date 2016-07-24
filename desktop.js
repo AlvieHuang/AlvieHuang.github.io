@@ -70,8 +70,9 @@ var animateWitch = function(){
     );
     targetElement.delay(100);
     targetElement.animate({left:'30%'},900);
+    targetElement.delay(50);
+    targetElement.animate({left:'27%'},100);
     targetElement.delay(100);
-    targetElement.animate({left:'27%'},100,'linear');
     targetElement.animate({left:'29%'},100,'linear',function()
         {document.getElementById("witch").src = "images/witch-left.gif";}
     );
@@ -86,7 +87,7 @@ var animateWitch = function(){
           document.getElementById("witch").src = "images/witch-front.gif";
         }
     );
-    targetElement.delay(300);
+    targetElement.delay(200);
 };
 
 var animateAlien = function(){
@@ -120,7 +121,7 @@ var animateAlien = function(){
 var animateBall = function(){
     var targetElement = $('#ball');
     targetElement.animate({left:'-=21%'},600,'linear');
-    targetElement.delay(100);
+    targetElement.delay(50);
     targetElement.animate({left:'+=21%'},600,'linear');
 }
 

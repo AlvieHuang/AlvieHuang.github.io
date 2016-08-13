@@ -76,7 +76,6 @@ body{
   height:auto;
   float:left;
   clear:left;
-  border: solid 2px black;
   margin-left:3.5%;
   position: relative;
 }
@@ -85,7 +84,6 @@ body{
   height:auto;
   float:right;
   clear:right;
-  border: solid 2px black;
   margin-right:3.5%;
   position: relative;
 }
@@ -171,11 +169,11 @@ h4{
 }
 
 #games .left{
-  height:200px;
+  height:240px;
 }
 
 #games .right{
-  height:200px;
+  height:240px;
 }
 
 .section div div{
@@ -224,6 +222,10 @@ h4{
     display:none;
 }
 
+
+/************************************************************************
+                                foooter
+************************************************************************/
 #footer {
   position: relative;
   right: 0;
@@ -235,6 +237,10 @@ h4{
   display:none;
 }
 
+
+/************************************************************************
+                                subtle
+************************************************************************/
 #subtle {
   text-align: right;
   float:right;

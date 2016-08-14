@@ -102,7 +102,7 @@ body{
   background: linear-gradient(to right top, #90F, #F0D); /* Standard syntax */
 }
 
-#animations{
+#animationslock{
   position: absolute;
   top:20px;
   right:20px;
@@ -115,10 +115,10 @@ body{
   transition-duration: 0.4s;
   padding:7px
 }
-#animations:hover{
+#animationslock:hover{
     box-shadow: 0 8px 30px 5px rgba(0,0,0,0.24);
 }
-#animations:active{
+#animationslock:active{
     box-shadow: 0 4px 15px 5px #9f3;
 }
 h2{
@@ -167,6 +167,23 @@ h4{
   left:60%;
   display:none;
 }
+.asteroid{
+  height:auto;
+  position:absolute;
+  display:none;
+}
+#asteroid1{
+  top:60%;
+  left:-10px;
+}
+#asteroid2{
+  top:10px;
+  left:30%;
+}
+#asteroid3{
+  top:20%;
+  left:95%;
+}
 
 #games .left{
   height:240px;
@@ -201,10 +218,16 @@ h4{
   background-color:#00FF66;
 }
 
+/************************************************************************
+                                content
+************************************************************************/
 #content {
     clear:both;
 }
 
+/************************************************************************
+                                progress
+************************************************************************/
 #progress {
     border-radius: 10px;
     background-color: rgba(0,0,0,.7);

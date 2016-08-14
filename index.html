@@ -9,6 +9,7 @@
         <link rel="stylesheet" type="text/css" href="explorer.css" media="all" />
         <![endif]-->
         <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="jqueryrotate.js"></script>
         <script type="text/javascript" src="iphone.js" media="only screen and (max-width: 480px)"></script>
         <script type="text/javascript" src="desktop.js" media="screen and (min-width: 481px)"></script>
     </head>
@@ -23,12 +24,12 @@
                 </div>
                 <p style="float:left; margin-top:40px;">Hello! As an undergrad Computer Science
                   Engineer at UCI, I have studied the complexity of branching programs and
-                  database structures. Additionaly I have learned the theory of computer science
+                  database structures. Additionally I have learned the theory of computer science
                   and alrgorithm.</p>
             </div>
 
             <div id=games class="green section">
-                <button id="animations" onclick="animations()">Lock all animation</button>
+                <button id="animationslock" onclick="animations()">Lock all animation</button>
                 <h2>Games</h2>
                 <div class="left" id="WvA">
                     <img class="leftimg" id="witch" src="images/witch-front.gif" width="50px"/>
@@ -48,6 +49,9 @@
                 <div class="right purple" id=Asteroid>
                     <img class="leftimg" id="player" src="images/playership.png" width="50px"/>
                     <img class="rightimg" id="ball2" src="images/ball2.gif" width="50px"/>
+                    <img class="asteroid" id="asteroid1" src="images/meteorbrown_big1.png" width="70px"/>
+                    <img class="asteroid" id="asteroid2" src="images/meteorbrown_big1.png" width="70px"/>
+                    <img class="asteroid" id="asteroid3" src="images/meteorbrown_big1.png" width="70px"/>
                     <h4>Asteroids 9000</h4>
                     <p class="GameRole">Programmer</p>
                     <p class="GameDescription">A single player game similar to the Asteroids game,

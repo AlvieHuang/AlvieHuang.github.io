@@ -133,8 +133,67 @@ $(document).ready(function(){
     $( "#games #Asteroid" ).hover(
       function() {
         $(this).children("div").stop().fadeIn("fast");
+        if (animation){
+          stop=false;
+          animateball2();
+          $("#asteroid1").fadeIn("fast");
+          $("#asteroid2").fadeIn("fast");
+          $("#asteroid3").fadeIn("fast");
+          rotateasteroid();
+          animateasteroid();
+          // animateAlien();
+        }
       }, function() {
         $(this).children("div").stop().fadeOut("fast");
+        if (animation){
+          stop=true;
+          // $("#Asteroid .leftimg").finish();
+          $("#Asteroid .rightimg").finish();
+          $("#asteroid1").stopRotate();
+          $("#asteroid1").finish().fadeOut("fast");
+          $("#asteroid2").finish().fadeOut("fast");
+          $("#asteroid3").finish().fadeOut("fast");
+        }
       }
     );
 });
+
+//************************************************************************
+//All of the animation for Asteroid 9000
+//************************************************************************
+var rotateasteroid = function(){
+    if (stop){return;}
+    $("#asteroid1").rotate({angle:0,animateTo:360,callback:rotateasteroid,
+    easing:function(x,t,b,c,d){ // t: current time, b: begInnIng value, c: change In value, d: duration
+      return c*(t/d)+b;
+    }});
+    $("#asteroid2").rotate({angle:-180,animateTo:180,
+    easing:function(x,t,b,c,d){ // t: current time, b: begInnIng value, c: change In value, d: duration
+      return c*(t/d)+b;
+    }});
+    $("#asteroid3").rotate({angle:100,animateTo:-260,
+    easing:function(x,t,b,c,d){ // t: current time, b: begInnIng value, c: change In value, d: duration
+      return c*(t/d)+b;
+    }});
+
+};
+
+var animateball2 = function(){
+    if (stop){return;}
+    var targetElement = $("#ball2");
+    targetElement.animate({top:'30%', right:'30%'},600,'linear');
+    targetElement.delay(1000);
+    targetElement.animate({top:'10px',right:'3%'},600,function(){
+      animateball2();
+    });
+    targetElement.delay(1000);
+};
+
+var animateasteroid = function(){
+    if (stop){return;}
+    var targetElement=$("#asteroid1");
+    targetElement.animate({left:'50%'},1200,'linear', function(){
+      animateasteroid();
+    });
+    targetElement.css({"left":"-5px"});
+};

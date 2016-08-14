@@ -136,6 +136,7 @@ $(document).ready(function(){
         if (animation){
           stop=false;
           animateball2();
+          animateplayer();
           $("#asteroid1").fadeIn("fast");
           $("#asteroid2").fadeIn("fast");
           $("#asteroid3").fadeIn("fast");
@@ -147,7 +148,7 @@ $(document).ready(function(){
         $(this).children("div").stop().fadeOut("fast");
         if (animation){
           stop=true;
-          // $("#Asteroid .leftimg").finish();
+          $("#Asteroid .leftimg").finish();
           $("#Asteroid .rightimg").finish();
           $("#asteroid1").stopRotate();
           $("#asteroid1").finish().fadeOut("fast");
@@ -188,6 +189,18 @@ var animateball2 = function(){
     });
     targetElement.delay(1000);
 };
+
+var animateplayer = function(){
+  if (stop){return;}
+  var targetElement = $("#player");
+  targetElement.rotate({angle:0,animateTo:135,duration:1000});
+  targetElement.animate({left:'30%',top:'30%'},1200,'linear',function(){
+    targetElement.rotate({angle:135,angle:315,duration:1000});
+  });
+  targetElement.animate({left:'3%',top:'10px'},1200,'linear',function(){
+    animateplayer();
+  })
+}
 
 var animateasteroid = function(){
     if (stop){return;}

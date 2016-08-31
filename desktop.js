@@ -169,12 +169,12 @@ var rotateasteroid = function(){
       return c*(t/d)+b;
     }});
     $("#asteroid2").rotate({angle:-180,animateTo:180,
-    easing:function(x,t,b,c,d){ // t: current time, b: begInnIng value, c: change In value, d: duration
-      return c*(t/d)+b;
+    easing:function(x,t,b,c,d){
+      return c*(t/(2*d))+b;
     }});
     $("#asteroid3").rotate({angle:100,animateTo:-260,
-    easing:function(x,t,b,c,d){ // t: current time, b: begInnIng value, c: change In value, d: duration
-      return c*(t/d)+b;
+    easing:function(x,t,b,c,d){
+      return c*(t/(1.5*d))+b;
     }});
 
 };
@@ -182,9 +182,9 @@ var rotateasteroid = function(){
 var animateball2 = function(){
     if (stop){return;}
     var targetElement = $("#ball2");
-    targetElement.animate({top:'30%', right:'30%'},600,'linear');
+    targetElement.animate({top:'30%', right:'30%'},1000,'linear');
     targetElement.delay(1000);
-    targetElement.animate({top:'10px',right:'3%'},600,function(){
+    targetElement.animate({top:'10px',right:'3%'},100,function(){
       animateball2();
     });
     targetElement.delay(1000);
@@ -194,12 +194,13 @@ var animateplayer = function(){
   if (stop){return;}
   var targetElement = $("#player");
   targetElement.rotate({angle:0,animateTo:135,duration:1000});
-  targetElement.animate({left:'30%',top:'30%'},1200,'linear',function(){
-    targetElement.rotate({angle:135,angle:315,duration:1000});
+  targetElement.animate({left:'30%',top:'30%'},2000,'linear',function(){
+    targetElement.rotate({angle:135,angle:315,duration:100});
   });
-  targetElement.animate({left:'3%',top:'10px'},1200,'linear',function(){
+  targetElement.animate({left:'3%',top:'10px'},100,'linear',function(){
     animateplayer();
   })
+  targetElement.delay(1000);
 }
 
 var animateasteroid = function(){

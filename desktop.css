@@ -13,11 +13,11 @@ body{
                                 top bar
 ************************************************************************/
 #top_bar{
-  background: #005500;
-  background: -webkit-linear-gradient(#00BB00, #003300); /* For Safari */
-  background: -o-linear-gradient(#00BB00, #003300); /* For Opera  */
-  background: -moz-linear-gradient(#00BB00, #003300); /* For Firefox */
-  background: linear-gradient(to bottom, #00BB00, #003300); /* Standard syntax */
+  background: #015249;
+  background: -webkit-linear-gradient(#015249, #00BB00); /* For Safari */
+  background: -o-linear-gradient(#015249, #00BB00); /* For Opera  */
+  background: -moz-linear-gradient(#015249, #00BB00); /* For Firefox */
+  background: linear-gradient(to bottom, #015249, #00BB00); /* Standard syntax */
   margin: 15px auto 10px auto;
   padding-right:100px;
   height:200px;
@@ -83,6 +83,8 @@ body{
   box-shadow:0 8px 30px 5px rgba(0,0,0,0.24);
 }
 .section .left{
+  color: #A5A5AF;
+  background-color:#015249;
   width:45%;
   height:auto;
   float:left;
@@ -91,6 +93,8 @@ body{
   position: relative;
 }
 .section .right{
+  color: #A5A5AF;
+  background-color:#015249;
   width:45%;
   height:auto;
   float:right;
@@ -101,10 +105,10 @@ body{
 
 .green{
   background-color:#3F0
-  background: -webkit-linear-gradient(right top, #3F0, #0FA); /* For Safari */
-  background: -o-linear-gradient(right top, #3F0, #0FA); /* For Opera  */
-  background: -moz-linear-gradient(right top, #3F0, #0FA); /* For Firefox */
-  background: linear-gradient(to right top, #3F0, #0FA); /* Standard syntax */
+  background: -webkit-linear-gradient(right , #77C9D4, #57BC90); /* For Safari */
+  background: -o-linear-gradient(right , #77C9D4, #57BC90); /* For Opera  */
+  background: -moz-linear-gradient(right , #77C9D4, #57BC90); /* For Firefox */
+  background: linear-gradient(to right , #77C9D4, #57BC90); /* Standard syntax */
 }
 .purple{
   background: -webkit-linear-gradient(right top, #90F, #F0D); /* For Safari */
@@ -118,7 +122,7 @@ body{
   top:20px;
   right:20px;
   border: none;
-  background-color: #040;
+  background-color: #015249;
   color: white;
   font-size: 16px;
   cursor: pointer;
@@ -134,6 +138,7 @@ body{
 }
 h2{
   font-size:40px;
+    color: #eee;
   clear:both;
   padding:0;
   margin:0 0 40px;
